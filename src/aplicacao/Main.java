@@ -24,7 +24,8 @@ public class Main {
                     2 - ALTERAR NOME
                     3 - SACAR
                     4 - DEPOSITAR
-                    5 - SAIR
+                    5 - MOSTRAR SALDO
+                    6 - SAIR
                     Qual a opção :
                     """);
             opcao = sc.nextInt();
@@ -89,7 +90,10 @@ public class Main {
                         System.out.println(conta);
                     }
                 }
-                case 5 -> {
+                case 5 ->{
+                    System.out.println(conta);
+                }
+                case 6 -> {
                     System.out.println("Saindo . . .");
                 }
                 default -> {
