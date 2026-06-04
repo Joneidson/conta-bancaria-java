@@ -56,25 +56,38 @@ public class Main {
                 }
                 case 2 -> {
                     sc.nextLine();
-                    System.out.println("Digite o novo nome do Titular: ");
-                    String novoNome = sc.nextLine();
-                    conta.setTitular(novoNome);
-                    System.out.println("Nome atualizado com sucesso!");
-                    System.out.println(conta);
+                    if (conta == null) {
+                        System.out.println("Cadastre uma conta primeiro");
+                    } else {
+
+                        System.out.println("Digite o novo nome do Titular: ");
+                        String novoNome = sc.nextLine();
+                        conta.setTitular(novoNome);
+                        System.out.println("Nome atualizado com sucesso!");
+                        System.out.println(conta);
+                    }
                 }
                 case 3 -> {
-                    System.out.println("Qual o valor do saque: $ ");
-                    double valorSaque = sc.nextDouble();
-                    conta.sacar(valorSaque);
-                    System.out.println("Saque realizado com sucesso!");
-                    System.out.println(conta);
+                    if (conta == null) {
+                        System.out.println("Cadastre uma conta primeiro");
+                    } else {
+                        System.out.println("Qual o valor do saque: $ ");
+                        double valorSaque = sc.nextDouble();
+                        conta.sacar(valorSaque);
+                        System.out.println("Saque realizado com sucesso!");
+                        System.out.println(conta);
+                    }
                 }
                 case 4 -> {
-                    System.out.println("Qual o valor deposito: $ ");
-                    double valorDeposito = sc.nextDouble();
-                    conta.depositar(valorDeposito);
-                    System.out.println("Valor depositado com sucesso!");
-                    System.out.println(conta);
+                    if (conta == null) {
+                        System.out.println("Cadastre uma conta primeiro");
+                    } else {
+                        System.out.println("Qual o valor deposito: $ ");
+                        double valorDeposito = sc.nextDouble();
+                        conta.depositar(valorDeposito);
+                        System.out.println("Valor depositado com sucesso!");
+                        System.out.println(conta);
+                    }
                 }
                 case 5 -> {
                     System.out.println("Saindo . . .");
