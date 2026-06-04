@@ -13,14 +13,12 @@ public class Conta {
         this.numeroConta = numeroConta;
         this.titular = titular;
         this.saldo = depositoInicial;
-
     }
 
     public Conta(int numeroConta, Titular titular) {
         this.numeroConta = numeroConta;
         this.titular = titular;
         this.saldo = 0.0;
-
     }
 
     public Titular getTitular() {
