@@ -15,7 +15,7 @@ public class Main {
 
         int opcao;
         Conta conta = null;
-        do {
+        do {// metodo de repetição (do While)
             System.out.print("""
                     ==================
                     |      MENU      |
@@ -102,7 +102,7 @@ public class Main {
 
             }
 
-        } while (opcao != 5);
+        } while (opcao !=6);
         sc.close();
     }
 }
